@@ -37,9 +37,9 @@ The file `prisma/seed.ts` contains 4 posts:
 
 Each post contains a different mixture of regular strings and ISO 8601 formatted strings.
 
-- Post 1 only has regular strings
-- Post 2 contains a single datetime string
-- Post 3 contains multiple datetime strings
-- Post 4 contains one of each
+- Post 1 only has regular strings, this is of type `List<String>`
+- Post 2 contains a single datetime string, this is of type `List<DateTime>`
+- Post 3 contains multiple datetime strings, this is also of type `List<DateTime>`
+- Post 4 contains one of each, this is of type `List<String | DateTime>`
 
 The first 3 posts are inserted successfully, and only post 4 fails.
