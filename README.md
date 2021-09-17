@@ -7,8 +7,9 @@ As of Prisma Client `v3.0.2`, executing such a query throws a type validation er
 ## Running the reproduction
 
 1. Starting the database with `docker-compose up`.
-2. Seed the database with `npx prisma db seed`.
-3. An error should be thrown.
+2. Apply the schema with `npx prisma migrate dev`
+3. Seed the database with `npx prisma db seed`.
+4. An error should be thrown.
 
 ## The seed data
 
